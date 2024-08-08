@@ -1,6 +1,9 @@
 #!/bin/bash
 
-# convert all images to .jpg
+#####################################
+# convert_images_to_jpg    v1.0 2024/08/08
+# massimo martinelli  
+#####################################
 
 # sudo apt install imagemagick
 
@@ -39,3 +42,19 @@ for file in "$DIRNAME"/*.png; do
     rm "$file"
   fi
 done
+
+
+
+###################àà
+#function iterateinsubdirectories() {
+#    local dir="$1"
+#    for entry in "$dir"/*; do
+#        if [ -d "$entry" ]; then
+#            echo "$entry"
+#            iterateinsubdirectories "$entry"  # Recursively iterate into subdirectories
+#        fi
+#    done
+#}
+
+# Start from the specified directory
+#iterateinsubdirectories "$DIRNAME"
