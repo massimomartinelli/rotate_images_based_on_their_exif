@@ -6,7 +6,7 @@ find /home/user/MYDIR/ -type f | while read -r file; do   # CHANGE THE DIRECTORY
   extension="${file##*.}"
   filename="${file%.*}"
 
-  # Remove all dots from the filename
+  # Remove all dots from the filename  (apart the one before the extension of course)
   clean_filename="${filename//./}"
 
   # Construct the new filename
